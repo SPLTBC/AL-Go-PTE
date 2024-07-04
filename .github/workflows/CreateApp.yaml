@@ -12,12 +12,15 @@ on:
       name:
         description: Name
         required: true
+        default: 'SP-XXX'
       publisher:
         description: Publisher
         required: true
+        default: 'StrongPoint'
       idrange:
         description: ID range (from..to)
         required: true
+        default: '50000..99999'
       sampleCode:
         description: Include Sample code?
         type: boolean
@@ -25,11 +28,11 @@ on:
       directCommit:
         description: Direct Commit?
         type: boolean
-        default: false
+        default: true
       useGhTokenWorkflow:
         description: Use GhTokenWorkflow for PR/Commit?
         type: boolean
-        default: false
+        default: true
 
 permissions:
   contents: write
